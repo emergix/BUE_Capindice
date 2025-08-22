@@ -271,6 +271,17 @@ graph LR
 
 ```
 
+```mermaid
+graph LR
+    1920 --> 1943 --> 1990 --> 1991 --> 1993 --> 1999
+    
+    1920[Création UEIF]
+    1943[Fusion BUE]
+    1990[Union Européenne de CIC]
+    1991[Création CRD]
+    1993[Fonds indiciel Patriote]
+    1999[Fusion CIC]
+```
 ---
 
 ### 10.2. Contexte de marché : fonds indiciels & assurance de portefeuille
