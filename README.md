@@ -50,9 +50,9 @@ document [Captindice I et II](./Captindice_I_et_II.pdf).
 
 document [Fond_Patriote](./Fond_Patriote.pdf).
 
-Equations Originelles [Captindice I et II](./Equation_Fond_Patriote.pdf).
+Equations Originelles [Equation_Fond_Patriote](./Equation_Fond_Patriote.pdf).
 
-Presentation du business Fond Indiciel assurés du 16/4/1991  [Captindice I et II](./Fond_Indiciel_1991_red.pdf).
+Presentation du business Fond Indiciel assurés du 16/4/1991  [Fond_Indiciel_1991_red](./Fond_Indiciel_1991_red.pdf).
 
 document [Gestion_Dynamique_Passive_1992](./Gestion_Dynamique_Passive_1992.pdf).
  
