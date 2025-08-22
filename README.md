@@ -48,6 +48,8 @@ Pour plus de détails sur la conception et la performance des premiers fonds, vo
 
 document [Captindice I et II](./Captindice_I_et_II.pdf).
 
+document [Fond_Patriote](./Fond_Patriote.pdf).
+
 Equations Originelles [Captindice I et II](./Equation_Fond_Patriote.pdf).
 
 Presentation du business Fond Indiciel assurés du 16/4/1991  [Captindice I et II](./Fond_Indiciel_1991_red.pdf).
