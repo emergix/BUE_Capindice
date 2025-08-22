@@ -217,23 +217,22 @@ Ce design a servi de base aux futurs fonds garantis/structurés, et son évoluti
 
 ```mermaid
 flowchart TD
-    A[Capital initial A0] --> B[Base sécurisée (obligataire/monétaire)]
-    A --> C[Exposition CAC40 via futures]
-    B -->|rendement r| B
-    C -->|PnL = e_t * (ΔM/M) * A_t| D[Variation de capital]
-    D --> E[Actif net A_{t+1}]
-    E --> F{Lock/Cliquet?}
-    F -- Oui --> G[(k_t ← min(q, k_t+1))]
-    F -- Non --> H[(k_t inchangé)]
-    G --> I[Floor ajusté: (1+ℓ)^{k_t} * A0]
+    A["Capital initial A0"] --> B["Base securisee<br/>obligataire / monetaire"]
+    A --> C["Exposition CAC40 via futures"]
+    B -->|"rendement r"| B
+    C -->|"PnL = e_t * (Delta M / M) * A_t"| D["Variation de capital"]
+    D --> E["Actif net A_{t+1}"]
+    E --> F{"Lock / cliquet ?"}
+    F -- "Oui" --> G["k_t = min(q, k_t + 1)"]
+    F -- "Non" --> H["k_t inchange"]
+    G --> I["Floor ajuste : (1 + l)^{k_t} * A0"]
     H --> I
-    I --> J{Perte max P_n respectée ?}
-    J -- Non --> K[Réduction exposition e_t]
-    J -- Oui --> L[Maintien exposition e_t]
+    I --> J{"Perte max P_n respectee ?"}
+    J -- "Non" --> K["Reduction exposition e_t"]
+    J -- "Oui" --> L["Maintien exposition e_t"]
     K --> C
     L --> C
-    %% Lien avec la perte effective
-    I --> M[P_n = 1 - (1 - p)/(1 - r)^{E - h}]
+    I --> M["P_n = 1 - (1 - p) / (1 - r)^{E - h}"]
     M --> J
 ```
 
@@ -250,39 +249,15 @@ flowchart TD
 ## 10. Frise chronologique — Contexte historique et émergence des fonds indiciels
 
 ```mermaid
-timeline
-    title Evolution BUE → CIC et émergence des fonds indiciels
-    1920 : Création de l'UEIF (Banque de l'Union Européenne Industrielle et Financière)
-    1943 : Fusion avec la Banque des Pays du Nord → devient BUE (Banque de l'Union Européenne)
-    1975 : Développement des marchés dérivés (CBOE aux USA, premiers contrats CAC en France)
-    1976 : Création de Vanguard 500 Index Fund (USA)
-    1980s : Montée en puissance des fonds indiciels aux USA
-    1990 : Fusion de la Compagnie Financière de CIC avec la BUE → naissance de l'Union Européenne de CIC
-    1991 : Création de la CRD (Cellule Recherche et Développement) chez Action Contrepartie (BUE)
-    1991 : Lancement du fonds indiciel assuré "Patriote" (→ Captindice)
-    1999 : Fusion Union Européenne de CIC et CIC Paris → CIC unifié
-    2000s : Généralisation des fonds structurés et fonds garantis en Europe
-    2010s : Explosion des ETF (fonds indiciels cotés) au niveau mondial
+flowchart LR
+    A1920["1920<br/>Creation UEIF"] --> A1943["1943<br/>Fusion avec Banque des Pays du Nord<br/>BUE"]
+    A1943 --> A1990["1990<br/>Compagnie Financiere de CIC + BUE<br/>Union Europeenne de CIC"]
+    A1990 --> A1991["1991<br/>Creation CRD (Action Contrepartie)"]
+    A1991 --> A1993["1991-1993<br/>Fonds indiciel assure Patriote"]
+    A1993 --> A1999["1999<br/>Fusion UE de CIC + CIC Paris<br/>CIC unifie"]
 ```
 
 ---
-
----
-
-## 10. Frise chronologique (Mermaid)
-
-### 10.1. Évolution institutionnelle (BUE → UE CIC → CIC)
-
-```mermaid
-timeline
-    title Évolution BUE → UE CIC → CIC
-    1920 : Création de l'UEIF (banque d'affaires)
-    1943 : Fusion avec Banque des Pays du Nord → BUE
-    1990 : Fusion Compagnie Financière de CIC + BUE → Union Européenne de CIC
-    1991 : Création de la CRD (Action Contrepartie) au sein de l'UE de CIC
-    1991-1993 : Développement du fonds indiciel assuré "Patriote"
-    1999 : Fusion UE de CIC + CIC Paris → CIC (structure unifiée)
-```
 
 ### 10.2. Contexte de marché : fonds indiciels & assurance de portefeuille
 
