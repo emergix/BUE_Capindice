@@ -285,10 +285,10 @@ graph TB
     1980 --> 1990
     1990[1990: Adoption progressive des fonds indiciels en France]
     1990 --> 1991
-    1991[1991: Prototypage "CaptIndice" fonds indiciel assuré/cliquet]
+    1991[1991: Prototypage CaptIndice fonds indiciel assuré/cliquet]
     1991 --> 2000
     2000[Années 2000 : Essor massif des ETF en Europe]
     2000 --> 2010
-    2010[Années 2010 : Généralisation des approches CPPI/OBPI dans l'offre bancaire]
+    2010[Années 2010 : Généralisation des approches CPPI OBPI dans l'offre bancaire]
 ```
 
