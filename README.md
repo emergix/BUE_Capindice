@@ -1,4 +1,4 @@
-# Le business CaptIndice a la BUEdans les années 90  (1991-1993)
+# Les fonds CaptIndice a la BUE dans les années 90  
 
 ## 1. Contexte historique
 
