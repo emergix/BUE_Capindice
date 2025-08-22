@@ -279,13 +279,13 @@ timeline
 
 ```mermaid
 graph TB
-    1970[Années 1970-1980 : Diffusion internationale de la gestion indicielle (US)]
+    1970[Années 1970-1980 : Diffusion internationale de la gestion indicielle US]
     1970 --> 1980
-    1980[ Fin des années 1980 : Popularisation des dérivés (futures, options) pour la couverture]
+    1980[ Fin des années 1980 : Popularisation des dérivés futures, options pour la couverture]
     1980 --> 1990
     1990[1990: Adoption progressive des fonds indiciels en France]
     1990 --> 1991
-    1991[1991: Prototypage "CaptIndice" (fonds indiciel assuré/cliquet)]
+    1991[1991: Prototypage "CaptIndice" fonds indiciel assuré/cliquet]
     1991 --> 2000
     2000[Années 2000 : Essor massif des ETF en Europe]
     2000 --> 2010
