@@ -263,14 +263,14 @@ flowchart TD
 
 ```mermaid
 graph LR
-    graph LR
-    N1920(1920: Création UEIF)
-    N1943(1943: Fusion avec Banque des Pays du Nord - BUE)
-    N1990(1990: CF CIC + BUE = Union Européenne de CIC)
-    N1991(1991: Création CRD - Action Contrepartie)
-    N1993(1991-1993: Fonds indiciel assuré Patriote)
-    N1999(1999: Fusion UE de CIC + CIC Paris = CIC)
-    N1920 --> N1943 --> N1990 --> N1991 --> N1993 --> N1999
+    1920[1920: Création UEIF]
+    1943[1943: Fusion avec Banque des Pays du Nord - BUE]
+    1990[1990: CF CIC + BUE = Union Européenne de CIC]
+    1991[1991: Création CRD - Action Contrepartie]
+    1993[1991-1993: Fonds indiciel assuré Patriote]
+    1999[1999: Fusion UE de CIC + CIC Paris = CIC]
+    
+    1920 --> 1943 --> 1990 --> 1991 --> 1993 --> 1999
 ```
 ---
 
