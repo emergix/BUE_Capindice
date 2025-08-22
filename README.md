@@ -2,6 +2,10 @@
 
 ## 1. Principe de Fonctionnement & Stratégie d'Investissement
 
+Pour plus de détails sur la conception et la performance des premiers fonds, vous pouvez consulter le document Captindice I et II.
+document [Captindice I et II](./Captindice_I_et_II.pdf).
+
+
 ### Actif du Fonds
 -   **Placement Majoritaire (≈97%)** : Certificats de dépôt arrivant à échéance à la même date que le fonds.
 -   **Gestion de Trésorerie (1-15%)** : Pris en pension au jour le jour pour couvrir les **appels de marge** des produits dérivés. Le pourcentage varie en fonction des flux de marge.
