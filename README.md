@@ -258,7 +258,6 @@ graph LR
     A1999(1999: Fusion UE de CIC + CIC Paris = CIC)
 
     A1920 --> A1943 --> A1990 --> A1991 --> A1993 --> A1999
-
 ```
 
 ---
