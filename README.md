@@ -27,6 +27,13 @@
 
 ➡️ Dans ce contexte, la **CRD (Cellule Recherche et Développement)** de la filiale *Action Contrepartie* de la BUE est créée en **1991**. Sa mission : développer des approches de gestion quantitative anticipant l’essor des fonds indiciels assurés, dont le **“Patriote”** fut l’un des prototypes.
 
+# Addendum — Note sur la dénomination « Patriote » (1991)
+
+- Le nom **« Patriote »** a été proposé dans le contexte de la guerre **États‑Unis / Irak (1990–1991)**, où le missile **Patriot** était présenté comme un symbole de haute technologie américaine.
+- Cette connotation **militaire** a rapidement été jugée **inappropriée** pour une offre de **gestion d’actifs** destinée au grand public et aux institutionnels.
+- Par souci de **neutralité** et d’**équilibre de marque**, l’appellation a été **abandonnée** au profit d’un nom plus **technique et descriptif**, conduisant à **« Captindice »** (référence à la capture/participation à l’indice, avec mécanismes de protection).
+- Enseignement de branding : éviter les **références martiales** ou politisées dans un produit d’épargne ; privilégier des dénominations **fonctionnelles**, **neutres** et **pédagogiques** (clarté de la promesse : indice + protection + gouvernance).
+
 
 Le fonds **“Patriote”**, lancé au début des années 1990 et devenu par la suite **“Captindice”**, représentait une innovation majeure :  
 - Combinaison de **gestion indicielle** (CAC 40) et d’**assurance de portefeuille**.  
