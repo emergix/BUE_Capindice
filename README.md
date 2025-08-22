@@ -268,7 +268,7 @@ graph LR
     A1991(1991: Creation CRD - Action Contrepartie)
     A1993(1991-1993: Fonds indiciel assure Patriote)
     A1999(1999: Fusion UE de CIC + CIC Paris = CIC)
-    A1920 --> A1943 --> A1990 --> A1991 --> A1993 --> A1999
+
 ```
 
 ---
