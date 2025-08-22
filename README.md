@@ -272,8 +272,23 @@ timeline
     Années 1970-1980 : Diffusion internationale de la gestion indicielle (US)
     Fin des années 1980 : Popularisation des dérivés (futures, options) pour la couverture
     Début années 1990 : Adoption progressive des fonds indiciels en France
-    1991-1993 : Prototypage "Patriote" (fonds indiciel assuré/cliquet)
+    1991-1993 : Prototypage "CaptIndice" (fonds indiciel assuré/cliquet)
     Années 2000 : Essor massif des ETF en Europe
     Années 2010 : Généralisation des approches CPPI/OBPI dans l'offre bancaire
+```
+
+```mermaid
+graph TB
+    1970[Années 1970-1980 : Diffusion internationale de la gestion indicielle (US)]
+    1970 --> 1980
+    1980[ Fin des années 1980 : Popularisation des dérivés (futures, options) pour la couverture]
+    1980 --> 1990
+    1990[1990: Adoption progressive des fonds indiciels en France]
+    1990 --> 1991
+    1991[1991: Prototypage "CaptIndice" (fonds indiciel assuré/cliquet)]
+    1991 --> 2000
+    2000[Années 2000 : Essor massif des ETF en Europe]
+    2000 --> 2010
+    2010[Années 2010 : Généralisation des approches CPPI/OBPI dans l'offre bancaire]
 ```
 
