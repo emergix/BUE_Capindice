@@ -3,8 +3,13 @@
 ## 1. Principe de Fonctionnement & Stratégie d'Investissement
 
 Pour plus de détails sur la conception et la performance des premiers fonds, vous pouvez consulter le document Captindice I et II.
+
 document [Captindice I et II](./Captindice_I_et_II.pdf).
 
+Equations Originelle [Captindice I et II](./Equation_Fond_Patriote.pdf).
+
+Presentation du business Fond Indiciel assurés du 16/4/1991  [Captindice I et II](./Fond_Indiciel_1991_red.pdf).
+ 
 
 ### Actif du Fonds
 -   **Placement Majoritaire (≈97%)** : Certificats de dépôt arrivant à échéance à la même date que le fonds.
