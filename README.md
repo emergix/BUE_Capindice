@@ -273,14 +273,13 @@ graph LR
 
 ```mermaid
 graph LR
-    1920 --> 1943 --> 1990 --> 1991 --> 1993 --> 1999
-    
-    1920[Création UEIF]
-    1943[Fusion BUE]
-    1990[Union Européenne de CIC]
-    1991[Création CRD]
-    1993[Fonds indiciel Patriote]
-    1999[Fusion CIC]
+    "1920"(1920: Création UEIF)
+    "1943"(1943: Fusion avec Banque des Pays du Nord - BUE)
+    "1990"(1990: CF CIC + BUE = Union Européenne de CIC)
+    "1991"(1991: Création CRD - Action Contrepartie)
+    "1993"(1991-1993: Fonds indiciel assuré Patriote)
+    "1999"(1999: Fusion UE de CIC + CIC Paris = CIC)
+    "1920" --> "1943" --> "1990" --> "1991" --> "1993" --> "1999"
 ```
 ---
 
