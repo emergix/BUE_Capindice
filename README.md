@@ -221,7 +221,7 @@ graph TB
     1990 --> 1991
     1991[1991: Création CRD - Action Contrepartie]
     1991 --> 1993
-    1993[1991-1993: Fonds indiciel assuré Patriote]
+    1993[1991-1993: Fonds indiciel assuré CaptIndice]
     1993 --> 1999
     1999[1999: Fusion UE de CIC + CIC Paris = CIC]
 ```
@@ -229,7 +229,7 @@ graph TB
 ---
 
 ✅ **Conclusion :**
-Le “Patriote” peut être vu comme un **ancêtre hybride** entre **CPPI** et **OBPI**, avec une mécanique propre (cliquets verrouillant la performance).
+Le "captIndice (ancienement  “Patriote”) peut être vu comme un **ancêtre hybride** entre **CPPI** et **OBPI**, avec une mécanique propre (cliquets verrouillant la performance).
 Ce design a servi de base aux futurs fonds garantis/structurés, et son évolution vers “Captindice” reflète la maturité du marché des années 90.
 
 
