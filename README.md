@@ -249,12 +249,16 @@ flowchart TD
 ## 10. Frise chronologique — Contexte historique et émergence des fonds indiciels
 
 ```mermaid
-flowchart LR
-    A1920["1920<br/>Creation UEIF"] --> A1943["1943<br/>Fusion avec Banque des Pays du Nord<br/>BUE"]
-    A1943 --> A1990["1990<br/>Compagnie Financiere de CIC + BUE<br/>Union Europeenne de CIC"]
-    A1990 --> A1991["1991<br/>Creation CRD (Action Contrepartie)"]
-    A1991 --> A1993["1991-1993<br/>Fonds indiciel assure Patriote"]
-    A1993 --> A1999["1999<br/>Fusion UE de CIC + CIC Paris<br/>CIC unifie"]
+graph LR
+    A1920(1920: Creation UEIF)
+    A1943(1943: Fusion avec Banque des Pays du Nord - BUE)
+    A1990(1990: CF CIC + BUE = Union Europeenne de CIC)
+    A1991(1991: Creation CRD - Action Contrepartie)
+    A1993(1991-1993: Fonds indiciel assure Patriote)
+    A1999(1999: Fusion UE de CIC + CIC Paris = CIC)
+
+    A1920 --> A1943 --> A1990 --> A1991 --> A1993 --> A1999
+
 ```
 
 ---
