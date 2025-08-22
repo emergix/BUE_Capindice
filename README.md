@@ -1,4 +1,39 @@
-# Résumé des Fonds Captindice I & II (1991-1993)
+# Le business CaptIndice a la BUEdans les années 90  (1991-1993)
+
+## 1. Contexte historique
+
+---
+
+## 2. Contexte institutionnel et émergence des fonds indiciels
+
+### 2.1. Origines de la BUE (Banque de l’Union Européenne)
+- La **BUE**, anciennement *Banque de l’Union Européenne Industrielle et Financière (UEIF)*, fut créée en 1920 par le groupe Schneider et la Banque de l’Union Parisienne.  
+- Elle fusionne avec la Banque des Pays du Nord en 1943 et prend alors le nom de **Banque de l’Union Européenne (BUE)**.  
+- Son positionnement : banque d’affaires française, active dans le financement industriel et les marchés financiers.
+
+### 2.2. Formation de l’Union Européenne de CIC
+- Le **Crédit Industriel et Commercial (CIC)**, fondé en 1859, était l’une des principales banques françaises.  
+- En 1990, la **Compagnie Financière de CIC** fusionne avec la **BUE**, donnant naissance à l’**Union Européenne de CIC**.  
+- En 1991, l’actionnariat majoritaire de l’UE de CIC est détenu par le **GAN (Groupe des Assurances Nationales)**, à hauteur de 81,9 %.  
+- En 1999, l’**Union Européenne de CIC** fusionne avec **CIC Paris**, consolidant le groupe **CIC** sous la forme que nous connaissons aujourd’hui.
+
+### 2.3. Contexte bancaire et innovations financières (années 1990)
+- Début des années 90 : montée en puissance des **produits dérivés** (futures, options), utilisés autant pour couvrir les risques que pour créer des fonds structurés.  
+- Émergence en France des **fonds indiciels** (inspirés par les succès américains, ex. Vanguard).  
+- L’innovation réside dans la combinaison entre :  
+  - **Gestion passive** (réplication d’indice, ex. CAC40).  
+  - **Assurance de portefeuille** (protection du capital, cliquet/locking).  
+  - **Gestion quantitative** (expositions dynamiques ajustées quotidiennement).  
+
+➡️ Dans ce contexte, la **CRD (Cellule Recherche et Développement)** de la filiale *Action Contrepartie* de la BUE est créée en **1991**. Sa mission : développer des approches de gestion quantitative anticipant l’essor des fonds indiciels assurés, dont le **“Patriote”** fut l’un des prototypes.
+
+
+Le fonds **“Patriote”**, lancé au début des années 1990 et devenu par la suite **“Captindice”**, représentait une innovation majeure :  
+- Combinaison de **gestion indicielle** (CAC 40) et d’**assurance de portefeuille**.  
+- Objectif : garantir une **perte maximale en capital** tout en participant aux hausses du marché.  
+- Outils clés : contrats à terme, mécanisme de **locking/cliquet**, capital protégé.
+
+---
 
 ## 1. Principe de Fonctionnement & Stratégie d'Investissement
 
@@ -177,3 +212,88 @@ La maîtrise du risque (tracking error, pertes maximales, granularité) et l’u
 ✅ **Conclusion :**
 Le “Patriote” peut être vu comme un **ancêtre hybride** entre **CPPI** et **OBPI**, avec une mécanique propre (cliquets verrouillant la performance).
 Ce design a servi de base aux futurs fonds garantis/structurés, et son évolution vers “Captindice” reflète la maturité du marché des années 90.
+
+## 9. Schéma du mécanisme (Mermaid)
+
+```mermaid
+flowchart TD
+    A[Capital initial A0] --> B[Base sécurisée (obligataire/monétaire)]
+    A --> C[Exposition CAC40 via futures]
+    B -->|rendement r| B
+    C -->|PnL = e_t * (ΔM/M) * A_t| D[Variation de capital]
+    D --> E[Actif net A_{t+1}]
+    E --> F{Lock/Cliquet?}
+    F -- Oui --> G[(k_t ← min(q, k_t+1))]
+    F -- Non --> H[(k_t inchangé)]
+    G --> I[Floor ajusté: (1+ℓ)^{k_t} * A0]
+    H --> I
+    I --> J{Perte max P_n respectée ?}
+    J -- Non --> K[Réduction exposition e_t]
+    J -- Oui --> L[Maintien exposition e_t]
+    K --> C
+    L --> C
+    %% Lien avec la perte effective
+    I --> M[P_n = 1 - (1 - p)/(1 - r)^{E - h}]
+    M --> J
+```
+
+**Lecture du schéma :**
+1. Le capital est scindé entre **base sécurisée** et **exposition CAC40**.
+2. Le PnL de l’exposition met à jour l’actif net \(A_{t+1}\).
+3. À chaque étape, on teste le **cliquet (lock)** : s’il est déclenché, le **floor** \((1+\ell)^{k_t}A_0\) est relevé.
+4. Le respect de la **perte maximale \(P_n\)** conditionne l’**ajustement de l’exposition \(e_t\)**.
+```
+
+
+---
+
+## 10. Frise chronologique — Contexte historique et émergence des fonds indiciels
+
+```mermaid
+timeline
+    title Evolution BUE → CIC et émergence des fonds indiciels
+    1920 : Création de l'UEIF (Banque de l'Union Européenne Industrielle et Financière)
+    1943 : Fusion avec la Banque des Pays du Nord → devient BUE (Banque de l'Union Européenne)
+    1975 : Développement des marchés dérivés (CBOE aux USA, premiers contrats CAC en France)
+    1976 : Création de Vanguard 500 Index Fund (USA)
+    1980s : Montée en puissance des fonds indiciels aux USA
+    1990 : Fusion de la Compagnie Financière de CIC avec la BUE → naissance de l'Union Européenne de CIC
+    1991 : Création de la CRD (Cellule Recherche et Développement) chez Action Contrepartie (BUE)
+    1991 : Lancement du fonds indiciel assuré "Patriote" (→ Captindice)
+    1999 : Fusion Union Européenne de CIC et CIC Paris → CIC unifié
+    2000s : Généralisation des fonds structurés et fonds garantis en Europe
+    2010s : Explosion des ETF (fonds indiciels cotés) au niveau mondial
+```
+
+---
+
+---
+
+## 10. Frise chronologique (Mermaid)
+
+### 10.1. Évolution institutionnelle (BUE → UE CIC → CIC)
+
+```mermaid
+timeline
+    title Évolution BUE → UE CIC → CIC
+    1920 : Création de l'UEIF (banque d'affaires)
+    1943 : Fusion avec Banque des Pays du Nord → BUE
+    1990 : Fusion Compagnie Financière de CIC + BUE → Union Européenne de CIC
+    1991 : Création de la CRD (Action Contrepartie) au sein de l'UE de CIC
+    1991-1993 : Développement du fonds indiciel assuré "Patriote"
+    1999 : Fusion UE de CIC + CIC Paris → CIC (structure unifiée)
+```
+
+### 10.2. Contexte de marché : fonds indiciels & assurance de portefeuille
+
+```mermaid
+timeline
+    title Émergence des fonds indiciels et produits de protection
+    Années 1970-1980 : Diffusion internationale de la gestion indicielle (US)
+    Fin des années 1980 : Popularisation des dérivés (futures, options) pour la couverture
+    Début années 1990 : Adoption progressive des fonds indiciels en France
+    1991-1993 : Prototypage "Patriote" (fonds indiciel assuré/cliquet)
+    Années 2000 : Essor massif des ETF en Europe
+    Années 2010 : Généralisation des approches CPPI/OBPI dans l'offre bancaire
+```
+
