@@ -209,6 +209,22 @@ La maîtrise du risque (tracking error, pertes maximales, granularité) et l’u
 
 ---
 
+## 10. Frise chronologique — Contexte historique et émergence des fonds indiciels
+
+```mermaid
+graph LR
+    1920 --> 1943 --> 1990 --> 1991 --> 1993 --> 1999
+    
+    1920[Création UEIF]
+    1943[Fusion BUE]
+    1990[Union Européenne de CIC]
+    1991[Création CRD]
+    1993[Fonds indiciel Patriote]
+    1999[Fusion CIC]
+```
+
+---
+
 ✅ **Conclusion :**
 Le “Patriote” peut être vu comme un **ancêtre hybride** entre **CPPI** et **OBPI**, avec une mécanique propre (cliquets verrouillant la performance).
 Ce design a servi de base aux futurs fonds garantis/structurés, et son évolution vers “Captindice” reflète la maturité du marché des années 90.
@@ -244,24 +260,6 @@ flowchart TD
 4. Le respect de la **perte maximale \(P_n\)** conditionne l’**ajustement de l’exposition \(e_t\)**.
 ```
 
-
----
-
-## 10. Frise chronologique — Contexte historique et émergence des fonds indiciels
-
-```mermaid
-graph LR
-    1920 --> 1943 --> 1990 --> 1991 --> 1993 --> 1999
-    
-    1920[Création UEIF]
-    1943[Fusion BUE]
-    1990[Union Européenne de CIC]
-    1991[Création CRD]
-    1993[Fonds indiciel Patriote]
-    1999[Fusion CIC]
-```
-
----
 
 ### 10.2. Contexte de marché : fonds indiciels & assurance de portefeuille
 
