@@ -261,7 +261,7 @@ flowchart TD
 2. Le PnL de l’exposition met à jour l’actif net \(A_{t+1}\).
 3. À chaque étape, on teste le **cliquet (lock)** : s’il est déclenché, le **floor** \((1+\ell)^{k_t}A_0\) est relevé.
 4. Le respect de la **perte maximale \(P_n\)** conditionne l’**ajustement de l’exposition \(e_t\)**.
-```
+
 
 
 ### 10.2. Contexte de marché : fonds indiciels & assurance de portefeuille
