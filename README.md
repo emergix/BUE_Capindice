@@ -116,6 +116,33 @@ $$P_n = 1 - \frac{1 - p}{(1 - r)^{E-h}}$$
 
 ---
 
+
+## 6. Schéma simplifié du fonds envisagé
+
+```mermaid
+flowchart TD
+    A[Capital du Fonds] --> B[Base sans risque 80–99%]
+    A --> C[Tilt actif 1–20%]
+    B --> B1[Indices boursiers]
+    B --> B2[Obligataire]
+    B --> B3[Monétaire]
+    C --> C1[Modèles quantitatifs]
+    C --> C2[Stratégies d'arbitrage]
+    C --> C3[Surperformance ciblée]
+    A --> D[Assurance de portefeuille]
+    D --> D1[Limitation des pertes max]
+    D --> D2[Référentiel de performance]
+    D --> D3[Suivi quotidien des risques]
+```
+
+---
+
+✅ **En résumé :**  
+Entre 1991 et 1993, la CRD conçoit un fonds indiciel structuré, combinant **gestion passive**, **assurance de portefeuille** et **méthodes quantitatives**.  
+La maîtrise du risque (tracking error, pertes maximales, granularité) et l’usage de la technologie sont identifiés comme essentiels pour assurer la viabilité et la crédibilité du projet.
+
+
+
 ## 7. Reformulation moderne (comparaison avec CPPI/OBPI)
 
 ### 7.1. Proche du **CPPI (Constant Proportion Portfolio Insurance)**
