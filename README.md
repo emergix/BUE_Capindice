@@ -60,67 +60,59 @@ Face aux limites des versions I et II, le fonds **Captindice III** a été conç
 # 📑 Fond “Patriote” (→ Captindice) — Description et équations
 
 ## 1. Contexte historique
-Le fonds **“Patriote”**, lancé au début des années 1990 et devenu par la suite **“Captindice”**, représentait une innovation majeure :  
-- Combinaison de **gestion indicielle** (CAC 40) et d’**assurance de portefeuille**.  
-- Objectif : garantir une **perte maximale en capital** tout en participant aux hausses du marché.  
+Le fonds **“Patriote”**, lancé au début des années 1990 et devenu par la suite **“Captindice”**, représentait une innovation majeure :
+- Combinaison de **gestion indicielle** (CAC 40) et d’**assurance de portefeuille**.
+- Objectif : garantir une **perte maximale en capital** tout en participant aux hausses du marché.
 - Outils clés : contrats à terme, mécanisme de **locking/cliquet**, capital protégé.
 
 ---
 
 ## 2. Équation d’Exposition
-\[
-A_n - (1 + \ell)^{k_n} A_0 + P_n A_0 = e_n b A_n
-\]
+$$A_n - (1 + \ell)^{k_n} A_0 + P_n A_0 = e_n b A_n$$
 
-- **Plus-value exposée** : \( A_n - (1 + \ell)^{k_n} A_0 \)  
-- **Capital exposé** : \( P_n A_0 \)  
-- **Risque de marché** : \( e_n b A_n \)
+- **Plus-value exposée** : $A_n - (1 + \ell)^{k_n} A_0$
+- **Capital exposé** : $P_n A_0$
+- **Risque de marché** : $e_n b A_n$
 
 ---
 
 ## 3. Formation du Capital
-\[
-A_{n+1} - A_n = e_n \left( \frac{M_{n+1} - M_n}{M_n} \right) A_n + r A_n
-\]
+$$A_{n+1} - A_n = e_n \left( \frac{M_{n+1} - M_n}{M_n} \right) A_n + r A_n$$
 
-- Variation du capital = exposition au marché + intérêts.  
-- \( e_n \) = exposition dynamique ajustée quotidiennement.  
+- Variation du capital = exposition au marché + intérêts.
+- $e_n$ = exposition dynamique ajustée quotidiennement.
 
 ---
 
 ## 4. Mécanisme de Locking (Cliquet)
-\[
-k_n = \min \left[ q, \; \text{compteur de locks} \right]
-\]
+$$k_n = \min \left[ q, \; \text{compteur de locks} \right]$$
 
-- Protège les gains acquis.  
-- Maximum de \( q \) verrouillages possible.  
+- Protège les gains acquis.
+- Maximum de $q$ verrouillages possible.
 
 ---
 
 ## 5. Perte Effective
-\[
-P_n = 1 - \frac{1 - p}{(1 - r)^{E-h}}
-\]
+$$P_n = 1 - \frac{1 - p}{(1 - r)^{E-h}}$$
 
-- Dépend de la **durée réelle d’exposition** \((E-h)\).  
-- Intègre une **période tampon** \( h \) (mise en place & liquidation).  
+- Dépend de la **durée réelle d’exposition** $(E-h)$.
+- Intègre une **période tampon** $h$ (mise en place & liquidation).
 - Garantit la protection dans les phases critiques.
 
 ---
 
 ## 6. Variables principales
-- \( A_n \) : actif net au temps \( n \)  
-- \( M_n \) : cours du contrat future CAC 40  
-- \( e_n \) : exposition théorique quotidienne  
-- \( r \) : taux d’intérêt (≈ 18 mois)  
-- \( \ell \) : niveau de lock (cliquet)  
-- \( k_n \) : compteur de cliquets  
-- \( q \) : nombre max de cliquets  
-- \( b \) : baisse maximale tolérable  
-- \( p \) : perte maximale en capital  
-- \( E \) : durée totale du fonds  
-- \( h \) : période tampon  
+- $A_n$ : actif net au temps $n$
+- $M_n$ : cours du contrat future CAC 40
+- $e_n$ : exposition théorique quotidienne
+- $r$ : taux d’intérêt (≈ 18 mois)
+- $\ell$ : niveau de lock (cliquet)
+- $k_n$ : compteur de cliquets
+- $q$ : nombre max de cliquets
+- $b$ : baisse maximale tolérable
+- $p$ : perte maximale en capital
+- $E$ : durée totale du fonds
+- $h$ : période tampon
 
 ---
 
@@ -128,37 +120,33 @@ P_n = 1 - \frac{1 - p}{(1 - r)^{E-h}}
 
 ### 7.1. Proche du **CPPI (Constant Proportion Portfolio Insurance)**
 - Dans le CPPI, l’allocation suit :
-  \[
-  E_t = m \cdot \max(0, A_t - F_t)
-  \]
-  où \( m \) = multiplicateur, \( F_t \) = floor garanti.  
+  $$E_t = m \cdot \max(0, A_t - F_t)$$
+  où $m$ = multiplicateur, $F_t$ = floor garanti.
 
-- Le **Patriote** a une logique similaire :  
-  - \( A_t \) = capital du fonds.  
-  - \( (1+\ell)^{k_n} A_0 \) = *floor ajusté* (lock/cliquet).  
-  - \( e_n \) joue le rôle du multiplicateur d’exposition.  
+- Le **Patriote** a une logique similaire :
+  - $A_t$ = capital du fonds.
+  - $(1+\ell)^{k_n} A_0$ = *floor ajusté* (lock/cliquet).
+  - $e_n$ joue le rôle du multiplicateur d’exposition.
 
 ### 7.2. Lien avec **OBPI (Option Based Portfolio Insurance)**
-- OBPI = achat d’une option call sur l’indice + placement obligataire.  
-- Le **Patriote** imite ce mécanisme via :  
-  - \( r A_n \) : partie obligataire.  
-  - \( e_n (M_{n+1}-M_n)/M_n \cdot A_n \) : équivalent de l’exposition optionnelle.  
-  - \( k_n \) : rôle du cliquet, similaire aux *options lookback/cliquet* modernes.  
+- OBPI = achat d’une option call sur l’indice + placement obligataire.
+- Le **Patriote** imite ce mécanisme via :
+  - $r A_n$ : partie obligataire.
+  - $e_n (M_{n+1}-M_n)/M_n \cdot A_n$ : équivalent de l’exposition optionnelle.
+  - $k_n$ : rôle du cliquet, similaire aux *options lookback/cliquet* modernes.
 
 ---
 
 ## 8. 🔑 Interprétation
-- Historiquement, “Patriote” anticipe les mécanismes modernes de **fonds garantis** :  
-  - Allocation dynamique type **CPPI**,  
-  - Protection cliquet type **OBPI cliquet**,  
-  - Ajustement quotidien de l’exposition.  
+- Historiquement, “Patriote” anticipe les mécanismes modernes de **fonds garantis** :
+  - Allocation dynamique type **CPPI**,
+  - Protection cliquet type **OBPI cliquet**,
+  - Ajustement quotidien de l’exposition.
 
 - En 1991, cette approche était **très en avance** : elle combinait mathématiques financières, produits dérivés et structuration d’assurance pour séduire les investisseurs prudents.
 
 ---
 
-✅ **Conclusion :**  
-Le “Patriote” peut être vu comme un **ancêtre hybride** entre **CPPI** et **OBPI**, avec une mécanique propre (cliquets verrouillant la performance).  
-Ce design a servi de base aux futurs fonds garantis/structurés, et son évolution vers “Captindice” reflète la maturité du marché des années 90.  
-
-
+✅ **Conclusion :**
+Le “Patriote” peut être vu comme un **ancêtre hybride** entre **CPPI** et **OBPI**, avec une mécanique propre (cliquets verrouillant la performance).
+Ce design a servi de base aux futurs fonds garantis/structurés, et son évolution vers “Captindice” reflète la maturité du marché des années 90.
